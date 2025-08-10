@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>家居优选 - 全屋家具商城</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    header, footer { background:#333; color:#fff; padding:1em; text-align:center; }
+    nav a { color:#fff; margin:0 10px; text-decoration:none; }
+    .carousel { width: 100%; height: 300px; overflow: hidden; position: relative; }
+    .carousel img { width: 100%; height: 300px; object-fit: cover; }
+    .categories { display: flex; justify-content: space-around; padding: 1em 0; background: #f5f5f5; }
+    .category { text-align: center; width: 14%; }
+    .category img { width: 80px; height: 80px; }
+    .products { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 1em; }
+    .product { width: 23%; border: 1px solid #ddd; margin-bottom: 1em; border-radius: 4px; overflow: hidden; box-shadow: 0 0 6px #ccc; }
+    .product img { width: 100%; height: 180px; object-fit: cover; }
+    .product-info { padding: 0.5em 1em; }
+    .product-info h3 { margin: 0.5em 0; font-size: 1.1em; }
+    .product-info p { color: #e53935; font-weight: bold; }
+    @media(max-width: 768px){
+      .categories { flex-wrap: wrap; }
+      .category { width: 30%; margin-bottom: 1em; }
+      .products { flex-direction: column; align-items: center; }
+      .product { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>家居优选</h1>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="category.html">产品分类</a>
+    <a href="#">会员中心</a>
+    <a href="#">联系客服</a>
+  </nav>
+</header>
+
+<div class="carousel">
+  <img src="https://images.unsplash.com/photo-1567016545921-870c33fef3c0?auto=format&fit=crop&w=1200&q=80" alt="家具轮播图1" />
+</div>
+
+<section class="categories">
+  <div class="category">
+    <img src="https://img.icons8.com/ios-filled/100/000000/sofa.png" alt="客厅家具" />
+    <p>客厅家具</p>
+  </div>
+  <div class="category">
+    <img src="https://img.icons8.com/ios-filled/100/000000/bed.png" alt="卧室家具" />
+    <p>卧室家具</p>
+  </div>
+  <div class="category">
+    <img src="https://img.icons8.com/ios-filled/100/000000/dining-table.png" alt="餐厅家具" />
+    <p>餐厅家具</p>
+  </div>
+  <div class="category">
+    <img src="https://img.icons8.com/ios-filled/100/000000/office-chair.png" alt="办公家具" />
+    <p>办公家具</p>
+  </div>
+  <div class="category">
+    <img src="https://img.icons8.com/ios-filled/100/000000/park-bench.png" alt="户外家具" />
+    <p>户外家具</p>
+  </div>
+  <div class="category">
+    <img src="https://img.icons8.com/ios-filled/100/000000/kids-bed.png" alt="儿童家具" />
+    <p>儿童家具</p>
+  </div>
+</section>
+
+<section class="products">
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161b16c48?auto=format&fit=crop&w=800&q=80" alt="现代沙发" />
+    <div class="product-info">
+      <h3>现代布艺沙发</h3>
+      <p>¥2980</p>
+    </div>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1582575128853-9c15f8057d7e?auto=format&fit=crop&w=800&q=80" alt="实木餐桌" />
+    <div class="product-info">
+      <h3>实木餐桌套装</h3>
+      <p>¥4500</p>
+    </div>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1606761561630-09b7cbb94c70?auto=format&fit=crop&w=800&q=80" alt="办公椅" />
+    <div class="product-info">
+      <h3>人体工学办公椅</h3>
+      <p>¥1680</p>
+    </div>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1578894386601-3ec315f3a04a?auto=format&fit=crop&w=800&q=80" alt="儿童床" />
+    <div class="product-info">
+      <h3>儿童成长床</h3>
+      <p>¥2200</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 家居优选 版权所有</p>
+</footer>
+
+</body>
+</html>
